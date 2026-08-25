@@ -33,7 +33,7 @@ Remote Door Control • Live Video Streaming • ESP32-CAM • FreeRTOS • Serv
 
 <br><br>
 
-<img src="images/live_stream.png" width="850">
+<img src="https://github.com/Surya-8948/Esp32CameraBased_Door_Lock/blob/main/Esp32DoorlockDashboard.png?raw=true" width="850">
 
 </p>
 
