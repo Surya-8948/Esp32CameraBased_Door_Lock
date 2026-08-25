@@ -25,7 +25,6 @@ Remote Door Control • Live Video Streaming • ESP32-CAM • FreeRTOS • Serv
 
 # 📸 Project Demonstration
 
-> **Replace the images below with your project screenshots.**
 
 <p align="center">
 
