@@ -3,33 +3,37 @@
 
 # 🔐 ESP32-CAM Smart Door Lock System
 
-### AI Thinker ESP32-CAM | Live Video Streaming | Smart Web Dashboard | Servo Lock Control
+### Professional IoT Smart Door Lock with Live Camera Streaming & Responsive Web Dashboard
+
+Remote Door Control • Live Video Streaming • ESP32-CAM • FreeRTOS • Servo Lock
 
 <p align="center">
 
 ![ESP32](https://img.shields.io/badge/ESP32-CAM-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)
-![FreeRTOS](https://img.shields.io/badge/FreeRTOS-Real_Time_OS-success?style=for-the-badge)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-Real--Time_OS-success?style=for-the-badge)
 ![WiFi](https://img.shields.io/badge/WiFi-Access_Point-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
 
 </p>
 
-### 🚪 A Professional IoT Smart Door Lock with Live Camera Streaming and Web-Based Remote Control
+*A professional Embedded IoT project demonstrating how to build a **Wi-Fi based Smart Door Lock System** using **ESP32-CAM**, featuring **Live Video Streaming**, **Remote Servo Control**, and a **Modern Responsive Web Dashboard**.*
 
 </div>
 
 ---
 
-# 📸 Project Preview
+# 📸 Project Demonstration
 
-> **Replace these with your own screenshots**
+> **Replace the images below with your project screenshots.**
 
 <p align="center">
 
-| Web Dashboard | Live Camera |
-|:-------------:|:-----------:|
-| ![](images/dashboard.png) | ![](images/live_stream.png) |
+<img src="images/dashboard.png" width="850">
+
+<br><br>
+
+<img src="images/live_stream.png" width="850">
 
 </p>
 
@@ -37,92 +41,75 @@
 
 # 📖 Overview
 
-This project is a **Professional Smart Door Lock System** built using the **AI Thinker ESP32-CAM**.
+This project demonstrates a **Professional Smart Door Lock System** using the **AI Thinker ESP32-CAM**.
 
-Unlike traditional smart lock projects, this system creates its **own Wi-Fi Access Point**, allowing any nearby phone or laptop to connect **without requiring an internet connection or router**. Once connected, users can securely access a **modern responsive web dashboard** to:
+Unlike conventional smart locks that depend on cloud services or external routers, this system creates its **own Wi-Fi Access Point**, allowing smartphones or laptops to connect directly without an internet connection.
 
-- 🔓 Unlock the Door
-- 🔒 Lock the Door
-- 📹 Watch Live Camera Feed
-- 📸 Capture Snapshots
-- 💡 Toggle Flash Light
-- 📋 Monitor Activity Log
-- ⏱ Auto Re-Lock the Door
+Once connected, users can access a **beautiful responsive web dashboard** to monitor the live camera stream, unlock or lock the door remotely, control the flash LED, capture snapshots, and monitor real-time activity logs.
 
-The project combines **Embedded Systems**, **IoT**, **ESP32**, **FreeRTOS**, **Web Development**, and **Servo Control** into a single real-world application.
+The project combines multiple Embedded Systems concepts including:
+
+- ESP32-CAM
+- Servo Motor Control
+- Embedded Web Server
+- FreeRTOS
+- MJPEG Streaming
+- Responsive Web UI
+- Wi-Fi Access Point Mode
+- JSON APIs
 
 ---
 
 # ✨ Features
 
-## 🔐 Smart Door Lock
+✔ ESP32-CAM Live MJPEG Video Streaming
 
-- Servo Controlled Lock
-- Remote Lock / Unlock
-- Automatic Re-Lock Timer
-- Door Status Indicator
+✔ Modern Responsive Web Dashboard
 
----
+✔ Remote Door Lock / Unlock
 
-## 📹 Live Video Streaming
+✔ Servo Controlled Smart Lock
 
-- MJPEG Video Streaming
-- VGA Resolution
-- Mobile Friendly
-- Low Latency
-- Separate Streaming Server
+✔ Built-in Wi-Fi Hotspot
 
----
+✔ No Internet Required
 
-## 🌐 Professional Web Dashboard
+✔ Flash Light Control
 
-- Beautiful Responsive UI
-- Works on Mobile & Desktop
-- Real-Time Status Updates
-- Modern Design
-- Activity Log
-- Snapshot Button
+✔ Snapshot Capture
 
----
+✔ Live Activity Log
 
-## 📡 Networking
+✔ Connected Client Counter
 
-- Works without Internet
-- ESP32-CAM creates its own Wi-Fi Hotspot
-- No Router Required
-- WPA2 Protected Access Point
+✔ Device Uptime
+
+✔ Auto Re-Lock Timer
+
+✔ FreeRTOS Background Streaming Task
+
+✔ Mobile Friendly Interface
+
+✔ Clean Modular Source Code
 
 ---
 
-## 💡 Additional Features
+# 🌐 Web Dashboard
 
-- Flash LED Control
-- Camera Snapshot
-- Event Logging
-- Status LEDs
-- FreeRTOS Background Streaming Task
-- Auto Camera Initialization
+The project includes a professional **HTML + CSS + JavaScript** dashboard hosted directly on the ESP32-CAM.
 
----
+### Dashboard Features
 
-# 🏗 System Architecture
-
-```
-              Smartphone / Laptop
-                      │
-             Connect via Wi-Fi
-                      │
-        ESP32-CAM Access Point (AP)
-                      │
-      ┌───────────────┼────────────────┐
-      │               │                │
-      │               │                │
- Live Camera      Servo Lock      Flash LED
-      │               │                │
-      └───────────────┼────────────────┘
-                      │
-          Professional Web Dashboard
-```
+- 📹 Live Camera Feed
+- 🔓 Open Gate
+- 🔒 Keep Locked
+- 💡 Flash Light ON/OFF
+- 📸 Capture Snapshot
+- 📊 Live Door Status
+- 📋 Activity Log
+- 👥 Connected Clients
+- ⏱ Device Uptime
+- ⌛ Auto Re-Lock Countdown
 
 ---
 
@@ -132,170 +119,149 @@ The project combines **Embedded Systems**, **IoT**, **ESP32**, **FreeRTOS**, **W
 |-----------|:--------:|
 | ESP32-CAM (AI Thinker) | 1 |
 | SG90 Servo Motor | 1 |
-| FTDI Programmer | 1 |
+| FTDI USB Programmer | 1 |
 | Jumper Wires | As Required |
 | 5V Power Supply | 1 |
 
 ---
 
-# 🔌 Wiring
+# 🔌 Circuit Connections
 
-| ESP32-CAM | Component |
-|------------|-----------|
+| ESP32-CAM Pin | Component |
+|---------------|-----------|
 | GPIO2 | Servo Signal |
 | GPIO4 | Flash LED |
 | GPIO33 | Status LED |
 | 5V | Servo VCC |
-| GND | Servo GND |
-
----
-
-# 🌐 Default Wi-Fi Configuration
-
-| Parameter | Value |
-|-----------|-------|
-| SSID | SmartDoorLock |
-| Password | 12345678 |
-| Dashboard | http://192.168.4.1 |
-| Stream Port | 81 |
-
-These are defined directly in the firmware configuration.
+| GND | Common Ground |
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 ESP32_CAM_Smart_Door_Lock
 │
 ├── SmartDoorLock.ino
-├── images/
+├── images
 │   ├── dashboard.png
 │   ├── live_stream.png
-│   └── wiring.png
+│   ├── circuit.png
+│   └── demo.gif
 ├── README.md
 └── LICENSE
 ```
 
 ---
 
+# 🌐 Default Wi-Fi Settings
+
+| Parameter | Value |
+|-----------|-------|
+| SSID | SmartDoorLock |
+| Password | 12345678 |
+| Dashboard | http://192.168.4.1 |
+| Stream | http://192.168.4.1:81/stream |
+
+---
+
 # 🚀 Getting Started
 
-## 1 Clone Repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/YourUsername/ESP32-CAM-Smart-Door-Lock.git
+git clone https://github.com/Surya-8948/ESP32-CAM-SmartDoorLock.git
 ```
 
----
+### Open Arduino IDE
 
-## 2 Open Arduino IDE
+Open
 
-Install the latest **ESP32 Board Package**
+```
+SmartDoorLock.ino
+```
 
----
+### Install ESP32 Board Package
 
-## 3 Select Board
+```
+Boards Manager
+↓
+
+ESP32 by Espressif Systems
+```
+
+### Select Board
 
 ```
 AI Thinker ESP32-CAM
 ```
 
----
+### Upload
 
-## 4 Upload
-
-- Connect GPIO0 to GND
-- Press RESET
-- Upload Sketch
-- Disconnect GPIO0
-- Press RESET Again
+1. Connect GPIO0 to GND
+2. Press RESET
+3. Upload Code
+4. Disconnect GPIO0
+5. Press RESET Again
 
 ---
 
-## 5 Connect
+# 📱 Using the Smart Door Lock
 
-Phone →
+Connect your phone to:
 
 ```
-Wi-Fi
+SSID
 
-SSID :
 SmartDoorLock
+```
 
-Password :
+Password
+
+```
 12345678
 ```
 
----
-
-## 6 Open Browser
+Open Browser
 
 ```
 http://192.168.4.1
 ```
 
-You'll see the Smart Door Lock Dashboard.
+Enjoy the Smart Dashboard.
 
 ---
 
-# 📱 Dashboard Features
-
-✅ Live Camera Feed
-
-✅ Unlock Door
-
-✅ Lock Door
-
-✅ Flash Light Control
-
-✅ Snapshot Capture
-
-✅ Activity Log
-
-✅ Connected Clients
-
-✅ Uptime Counter
-
-✅ Auto Re-Lock Timer
-
-The dashboard includes responsive controls, status badges, activity logging, and a live MJPEG stream.
-
----
-
-# 📡 HTTP API
+# 📡 API Endpoints
 
 | Endpoint | Description |
 |-----------|-------------|
-| / | Dashboard |
-| /status | Device Status |
-| /open | Unlock Door |
-| /lock | Lock Door |
-| /flash | Toggle Flash |
-| /snapshot | Capture Image |
-| :81/stream | Live Camera Feed |
-
-These endpoints are registered by the embedded web server.
+| `/` | Dashboard |
+| `/status` | Device Status |
+| `/open` | Unlock Door |
+| `/lock` | Lock Door |
+| `/flash` | Toggle Flash |
+| `/snapshot` | Capture Image |
+| `:81/stream` | Live Camera Stream |
 
 ---
 
 # 📚 Concepts Covered
 
-- ESP32-CAM
-- FreeRTOS
-- HTTP Server
-- MJPEG Streaming
-- Servo Motor Control
+- ESP32-CAM Programming
 - Wi-Fi Access Point
-- JSON APIs
+- Embedded HTTP Server
+- MJPEG Video Streaming
+- Servo PWM Control
+- JSON Communication
 - HTML
 - CSS
 - JavaScript
+- Responsive UI
+- FreeRTOS Tasks
 - Embedded C++
-- Camera Driver
 - Event Logging
-- PWM
-- LEDC Timer
+- Camera Driver
 - Non-Blocking Programming
 
 ---
@@ -305,43 +271,73 @@ These endpoints are registered by the embedded web server.
 After completing this project you will learn:
 
 - ESP32-CAM Programming
-- Camera Configuration
-- Live Video Streaming
-- Embedded Web Servers
-- Building REST APIs
+- Camera Streaming
+- Building Embedded Web Servers
 - Servo Motor Control
-- FreeRTOS Task Creation
-- Embedded UI Design
-- Wi-Fi AP Mode
-- IoT Dashboard Development
+- FreeRTOS Task Management
+- HTML Dashboard Design
+- JavaScript Fetch API
+- REST API Development
+- Embedded IoT Application Design
+- Wi-Fi Networking
 
 ---
 
-# 🚀 Future Improvements
+# 📈 Future Improvements
 
-- Face Recognition
-- RFID Authentication
-- Fingerprint Sensor
-- Firebase Integration
-- Telegram Alerts
-- Cloud Storage
-- Mobile Application
-- Voice Commands
-- MQTT Support
-- Motion Detection
-- AI Person Detection
+- 😊 Face Recognition
+- 👤 Face Detection
+- 🔑 RFID Authentication
+- 👆 Fingerprint Module
+- ☁ Firebase Integration
+- 📲 Telegram Notifications
+- 📱 Android Application
+- 🎤 Voice Commands
+- ☁ Cloud Monitoring
+- 📦 MQTT Support
+- 🤖 AI Person Detection
+
+---
+
+# 💡 Applications
+
+- Smart Home Security
+- Office Access Control
+- Hostel Room Lock
+- College Laboratory Access
+- Warehouse Security
+- Industrial Gate Monitoring
+- Remote Surveillance
+- IoT Security Systems
 
 ---
 
 # ⭐ Support
 
-If you found this project helpful,
+If you found this project useful,
 
-please consider giving this repository a ⭐ **Star**.
+please consider giving it a ⭐ **Star**.
 
-It motivates me to create more professional **Embedded Systems**, **IoT**, **ESP32**, **STM32**, and **FreeRTOS** projects.
+Your support motivates me to create more professional **Embedded Systems**, **IoT**, **ESP32**, **STM32**, **FreeRTOS**, and **Robotics** projects.
 
 ---
+
+# 👨‍💻 Author
+
+## **Surya Bajpai**
+
+**Embedded Systems Developer**
+
+### Skills
+
+- Embedded C
+- Arduino
+- ESP32
+- ESP-IDF
+- STM32
+- FreeRTOS
+- IoT
+- Robotics
 
 ### GitHub
 
@@ -359,9 +355,9 @@ Feel free to use, modify, and distribute it for educational and personal project
 
 <div align="center">
 
-# 🌟 Star this Repository if you Like It 🌟
+## 🌟 Don't forget to Star this Repository 🌟
 
-### Made with ❤️ by Surya Bajpai
+### Made with ❤️ by **Surya Bajpai**
 
 **Happy Coding 🚀**
 
