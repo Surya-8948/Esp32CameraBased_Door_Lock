@@ -321,24 +321,6 @@ please consider giving it a ⭐ **Star**.
 Your support motivates me to create more professional **Embedded Systems**, **IoT**, **ESP32**, **STM32**, **FreeRTOS**, and **Robotics** projects.
 
 ---
-
-# 👨‍💻 Author
-
-## **Surya Bajpai**
-
-**Embedded Systems Developer**
-
-### Skills
-
-- Embedded C
-- Arduino
-- ESP32
-- ESP-IDF
-- STM32
-- FreeRTOS
-- IoT
-- Robotics
-
 ### GitHub
 
 https://github.com/Surya-8948
