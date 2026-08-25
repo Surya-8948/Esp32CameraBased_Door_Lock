@@ -1,4 +1,4 @@
-````markdown
+
 <div align="center">
 
 # 🔐 ESP32-CAM Smart Door Lock System
